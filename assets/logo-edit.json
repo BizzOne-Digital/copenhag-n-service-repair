@@ -1,0 +1,8 @@
+{
+  "key": "navbar-logo",
+  "source": "C:\\Users\\PC\\.codex\\generated_images\\01a1842d-33cc-74a0-afcf-d9f3fcf199c3\\exec-a78a6f30-8eec-4282-9909-c140d730ffac.png",
+  "url": "/images/brand/copenhagen-logo.png",
+  "prompt": "Use case: background-extraction. Edit target: the attached Copenhagen Service & Repair logo. Remove ONLY the solid dark navy background and make those background areas genuinely transparent, including the negative-space gaps between the surrounding lettering and the central engine/gear. Preserve the original circular logo artwork, white curved lettering 'COPENHAGEN' and 'SERVICE & REPAIR', blue gear, metallic engine illustration, blue 20 and 24, all colors, fine details and original proportions. Preserve any existing visible watermark marks overlapping the artwork; do not remove, retouch, reconstruct or obscure watermark text. Do not redesign, simplify, add text, create a new logo or change the artwork. Keep the complete original logo uncropped with a small transparent margin. Output a transparent PNG suitable for website navigation.",
+  "generator": "Built-in image_gen",
+  "transparentBackground": true
+}

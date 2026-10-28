@@ -1,0 +1,67 @@
+{
+  "generator": "Built-in image_gen",
+  "assets": [
+    {
+      "key": "hero",
+      "source": "C:\\Users\\PC\\.codex\\generated_images\\01a1842d-33cc-74a0-afcf-d9f3fcf199c3\\exec-5ad91fe8-5e12-498b-8db9-4eafc630299e.png",
+      "url": "/images/generated/hero.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: website photography for Copenhagen Service and Repair. Wide panoramic 16:9 hero photograph of an unbranded yellow and black counterbalance forklift, full vehicle clearly visible on the RIGHT HALF, three-quarter front view with grounded forks lowered, inside a spacious organized industrial warehouse. Left half mostly empty dark navy warehouse aisle for website text. Realistic geometry, sturdy tires, subtle blue workshop lighting, crisp steel and hydraulic details, red accents in distant shelving. Premium industrial commercial photography, eye-level, natural perspective, high detail. No operator. Cohesive real-world industrial photographic style. This is an illustrative generated scene, not a documentary image of actual business premises. No lettering, no logos, no watermarks, no UI, no collage. Produce one finished standalone photograph."
+    },
+    {
+      "key": "forklift-repair",
+      "source": "C:\\Users\\PC\\.codex\\generated_images\\01a1842d-33cc-74a0-afcf-d9f3fcf199c3\\exec-f5ec0875-1caf-4204-b4bc-31915c60e997.png",
+      "url": "/images/generated/forklift-repair.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: website photography for Copenhagen Service and Repair. Landscape 3:2 industrial commercial photograph, close three-quarter view of a yellow and black unbranded lift truck being serviced in a tidy professional workshop. Open engine compartment, socket tools neatly arranged on a small service trolley, real mechanical details, navy and cobalt blue surroundings with restrained red accents. No people. Full-frame relevant equipment composition, no empty text space. Cohesive real-world industrial photographic style. This is an illustrative generated scene, not a documentary image of actual business premises. No lettering, no logos, no watermarks, no UI, no collage. Produce one finished standalone photograph."
+    },
+    {
+      "key": "inspections",
+      "source": "C:\\Users\\PC\\.codex\\generated_images\\01a1842d-33cc-74a0-afcf-d9f3fcf199c3\\exec-6cc00aa4-d342-4a32-919a-08628d440d36.png",
+      "url": "/images/generated/inspections.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: website photography for Copenhagen Service and Repair. Landscape 3:2 commercial photograph of a yellow forklift and a red scissor lift parked side by side inside a bright tidy inspection bay, both complete vehicles, scissor platform fully lowered. Clean concrete floor, orderly workshop, subtle blue equipment cabinets. Photorealistic engineered mechanisms and grounded wheels, professional inspection setting, no people. Cohesive real-world industrial photographic style. This is an illustrative generated scene, not a documentary image of actual business premises. No lettering, no logos, no watermarks, no UI, no collage. Produce one finished standalone photograph."
+    },
+    {
+      "key": "small-engine",
+      "source": "C:\\Users\\PC\\.codex\\generated_images\\01a1842d-33cc-74a0-afcf-d9f3fcf199c3\\exec-6bd495a4-2a14-4466-a0d6-4a33c922f842.png",
+      "url": "/images/generated/small-engine.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: industrial service website photograph. Landscape 3:2 detailed commercial photograph of a compact red and black single-cylinder petrol utility engine on a clean workbench in a professional small-engine repair workshop. Engine is unbranded, realistic cooling fins, pull starter, fuel tank, spark plug, small sockets and wrench neatly arranged nearby. Blue tool cabinets, subtle red accents. No people, no car engine. Cohesive navy, blue, steel and restrained red photographic art direction for Copenhagen Service and Repair. Illustrative scene, not a picture of actual employees or facilities. No text, no logos, no watermarks, no collage. One standalone photograph."
+    },
+    {
+      "key": "aerial-lifts",
+      "source": "C:\\Users\\PC\\.codex\\generated_images\\01a1842d-33cc-74a0-afcf-d9f3fcf199c3\\exec-a5bbb03e-e4cc-41d0-8bc1-2b3d755a3832.png",
+      "url": "/images/generated/aerial-lifts.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: industrial service website photograph. Landscape 3:2 premium industrial photograph of an unbranded red scissor lift with fully lowered platform in the foreground and a blue boom lift with stowed boom parked further back in a spacious industrial equipment service bay. Realistic complete machinery, grounded wheels, convincing scissor linkage, tidy concrete floor, diffuse daylight. No people. Cohesive navy, blue, steel and restrained red photographic art direction for Copenhagen Service and Repair. Illustrative scene, not a picture of actual employees or facilities. No text, no logos, no watermarks, no collage. One standalone photograph."
+    },
+    {
+      "key": "maintenance",
+      "source": "C:\\Users\\PC\\.codex\\generated_images\\01a1842d-33cc-74a0-afcf-d9f3fcf199c3\\exec-ad750472-8368-4562-9037-93d09d4f2723.png",
+      "url": "/images/generated/maintenance.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: industrial service website photograph. Landscape 3:2 close-up commercial photograph of preventative maintenance on an industrial forklift: gloved technician hands using a ratchet on an accessible engine service point, visible oil filter and hydraulic hoses. Technician face outside frame, navy workwear, tidy service bay, blue tool cabinet and red trolley softly blurred behind. Safe stationary engine, convincing hand anatomy and tools. Cohesive navy, blue, steel and restrained red photographic art direction for Copenhagen Service and Repair. Illustrative scene, not a picture of actual employees or facilities. No text, no logos, no watermarks, no collage. One standalone photograph."
+    },
+    {
+      "key": "breakdown",
+      "source": "C:\\Users\\PC\\.codex\\generated_images\\01a1842d-33cc-74a0-afcf-d9f3fcf199c3\\exec-0248f163-a8df-4621-b3b8-5daa35253e8a.png",
+      "url": "/images/generated/breakdown.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: industrial service website photograph. Landscape 3:2 professional industrial commercial photograph of an unbranded yellow and black forklift parked safely in a warehouse service area with its side service panel open, compact diagnostic meter and organized red mobile toolbox alongside it. A navy-clad mechanic shown only from the back, face not visible, inspecting the stationary machine. Grounded forks fully lowered, no sparks, no accident, no unsafe lifting. Cool blue and natural lighting. Cohesive navy, cobalt blue, steel and restrained red art direction for Copenhagen Service and Repair. Illustrative generated scene, not actual employees or business premises. No text, no lettering, no logos, no watermarks, no collage. Produce one standalone photograph."
+    },
+    {
+      "key": "sales",
+      "source": "C:\\Users\\PC\\.codex\\generated_images\\01a1842d-33cc-74a0-afcf-d9f3fcf199c3\\exec-9d15365f-4c84-44db-93bd-001624bc8c34.png",
+      "url": "/images/generated/sales.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: industrial service website photograph. Landscape 3:2 premium commercial photograph of two unbranded counterbalance forklifts, one yellow and black and one royal blue and black, parked neatly in a clean industrial equipment showroom with wide windows, polished concrete floor, lowered grounded forks. Full vehicles visible with space around them, believable mechanical construction, professional catalog photography. No people. This illustrates equipment types, not actual available inventory. Cohesive navy, cobalt blue, steel and restrained red art direction for Copenhagen Service and Repair. Illustrative generated scene, not actual employees or business premises. No text, no lettering, no logos, no watermarks, no collage. Produce one standalone photograph."
+    },
+    {
+      "key": "workshop",
+      "source": "C:\\Users\\PC\\.codex\\generated_images\\01a1842d-33cc-74a0-afcf-d9f3fcf199c3\\exec-c168cfae-6953-4e15-867e-d01f3a8461c6.png",
+      "url": "/images/generated/workshop.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: industrial service website photograph. Landscape 3:2 cinematic commercial photograph of a professional equipment technician seen from behind, face concealed, wearing plain navy blue coveralls and protective gloves, carefully inspecting an open yellow forklift engine compartment in an orderly industrial repair workshop. Blue tool cabinets, restrained red trolley accents, clean organized steel tools, realistic mechanical details and natural daylight. Frame technician left and forklift right. Do not imply a portrait of any real named person. Cohesive navy, cobalt blue, steel and restrained red art direction for Copenhagen Service and Repair. Illustrative generated scene, not actual employees or business premises. No text, no lettering, no logos, no watermarks, no collage. Produce one standalone photograph."
+    },
+    {
+      "key": "navbar-logo",
+      "source": "C:\\Users\\PC\\.codex\\generated_images\\01a1842d-33cc-74a0-afcf-d9f3fcf199c3\\exec-a78a6f30-8eec-4282-9909-c140d730ffac.png",
+      "url": "/images/brand/copenhagen-logo.png",
+      "prompt": "Use case: background-extraction. Edit target: the attached Copenhagen Service & Repair logo. Remove ONLY the solid dark navy background and make those background areas genuinely transparent, including the negative-space gaps between the surrounding lettering and the central engine/gear. Preserve the original circular logo artwork, white curved lettering 'COPENHAGEN' and 'SERVICE & REPAIR', blue gear, metallic engine illustration, blue 20 and 24, all colors, fine details and original proportions. Preserve any existing visible watermark marks overlapping the artwork; do not remove, retouch, reconstruct or obscure watermark text. Do not redesign, simplify, add text, create a new logo or change the artwork. Keep the complete original logo uncropped with a small transparent margin. Output a transparent PNG suitable for website navigation.",
+      "generator": "Built-in image_gen",
+      "transparentBackground": true
+    }
+  ]
+}
