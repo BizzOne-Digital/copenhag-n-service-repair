@@ -38,9 +38,9 @@ export function LoginForm({ configured }: { configured: boolean }) {
       <p>Manage your website, service requests and content.</p>
       {!configured && (
         <div className="setup-notice">
-          Admin setup required. Configure MONGODB_URI and SESSION_SECRET in
-          .env.local, then run the seed command with your initial admin
-          credentials. See README.md.
+          Admin setup required. Set DATABASE_ENABLED=true and configure
+          MONGODB_URI and SESSION_SECRET in .env.local, then run the seed
+          command with your initial admin credentials. See README.md.
         </div>
       )}
       <label className="field">

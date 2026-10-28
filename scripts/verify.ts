@@ -33,6 +33,7 @@ let mongo: MongoMemoryServer | undefined;
 let browser: Awaited<ReturnType<typeof chromium.launch>> | undefined;
 async function main() {
   mongo = await MongoMemoryServer.create();
+  process.env.DATABASE_ENABLED = "true";
   process.env.MONGODB_URI = mongo.getUri("copenhagen_test");
   process.env.SESSION_SECRET = randomBytes(32).toString("hex");
   process.env.NEXT_PUBLIC_SITE_URL = origin;

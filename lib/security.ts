@@ -1,3 +1,4 @@
+import { DatabaseDisabledError } from "@/lib/runtime-config";
 import { createHash, randomBytes } from "node:crypto";
 import { cookies } from "next/headers";
 import { connectDB } from "@/lib/db";
@@ -66,6 +67,11 @@ export function reference(prefix: string) {
   return prefix + "-" + randomBytes(5).toString("hex").toUpperCase();
 }
 export function apiError(error: unknown) {
+  if (error instanceof DatabaseDisabledError)
+    return Response.json(
+      { success: false, error: error.message },
+      { status: 503 },
+    );
   if (error instanceof HttpError)
     return Response.json(
       { success: false, error: error.message },

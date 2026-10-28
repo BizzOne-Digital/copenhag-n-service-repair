@@ -1,3 +1,4 @@
+import { databaseEnabled } from "@/lib/runtime-config";
 import "server-only";
 import { connectDB } from "@/lib/db";
 import { PageContent, Service, SiteSettings } from "@/models";
@@ -8,13 +9,13 @@ import {
   type ServiceData,
 } from "@/lib/defaults";
 export async function settings() {
-  if (!process.env.MONGODB_URI) return defaultSettings;
+  if (!databaseEnabled()) return defaultSettings;
   await connectDB();
   const doc = await SiteSettings.findOne({ key: "main" }).lean();
   return { ...defaultSettings, ...(doc as any)?.data };
 }
 export async function pageContent(key: string) {
-  if (!process.env.MONGODB_URI) return defaultPages[key] || {};
+  if (!databaseEnabled()) return defaultPages[key] || {};
   await connectDB();
   const doc = await PageContent.findOne({ key }).lean();
   return { ...defaultPages[key], ...(doc as any)?.data } as Record<
@@ -23,7 +24,7 @@ export async function pageContent(key: string) {
   >;
 }
 export async function services(): Promise<ServiceData[]> {
-  if (!process.env.MONGODB_URI) return defaultServices;
+  if (!databaseEnabled()) return defaultServices;
   await connectDB();
   return JSON.parse(
     JSON.stringify(

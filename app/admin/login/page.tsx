@@ -1,10 +1,11 @@
+import { databaseEnabled } from "@/lib/runtime-config";
 import { LoginForm } from "@/components/admin/LoginForm";
 export default function Login() {
   return (
     <main className="login-page">
       <LoginForm
         configured={
-          !!process.env.MONGODB_URI &&
+          databaseEnabled() &&
           !!process.env.SESSION_SECRET &&
           process.env.SESSION_SECRET.length >= 32
         }

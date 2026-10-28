@@ -6,20 +6,20 @@ Next.js App Router application with dedicated public routes, a protected admin w
 
 1. Use Node.js 22 or newer and run `npm install`.
 2. Copy `.env.example` to `.env.local`.
-3. Set `MONGODB_URI` to your MongoDB Atlas connection string or local MongoDB database. Allow the deployment network in Atlas.
+3. For client database integration, set `DATABASE_ENABLED=true` and set `MONGODB_URI` to your MongoDB Atlas connection string or local MongoDB database. Allow the deployment network in Atlas.
 4. Set `SESSION_SECRET` to a cryptographically random value of at least 32 characters.
 5. Set `ADMIN_EMAIL` and a unique `ADMIN_PASSWORD` of at least 12 characters.
 6. Set `NEXT_PUBLIC_SITE_URL` to the exact origin used in the browser, including the port locally.
 7. Run `npm run seed`, then `npm run dev`.
 8. Open `http://localhost:3000`; sign in at `/admin/login`.
 
-Without MONGODB_URI, public pages render the initial reference-themed content. Forms and admin require a real database; no submissions are simulated. Once a database is configured, run seed before use. Runtime database failures are reported rather than silently replacing persisted content with defaults.
+By default DATABASE_ENABLED is false or unset: public pages always render content from lib/defaults.ts, even when MONGODB_URI was accidentally filled in. Forms and admin require a real database; no submissions are simulated. Once a database is configured, run seed before use. Runtime database failures are reported rather than silently replacing persisted content with defaults.
 
 The seed is idempotent. It never replaces edited content or existing admin passwords. Remove ADMIN_PASSWORD from runtime deployment settings after provisioning. Bootstrap credentials are never sent to the browser.
 
 ## Vercel deployment
 
-Import this Next.js project into Vercel. Configure MONGODB_URI, SESSION_SECRET, and NEXT_PUBLIC_SITE_URL in the target environment. Set the site URL to the final deployment origin. Run the seed against the target database from a trusted local environment, then deploy with `npm run build`. A preview deployment needs its own correctly configured origin for form and admin mutation checks. This app uses Node/Mongoose and should be hosted on a Node-compatible platform, not a Cloudflare Worker without Mongo support.
+Import this Next.js project into Vercel. For design-only sharing, leave DATABASE_ENABLED unset or false; no database is needed. When the client database is ready, set DATABASE_ENABLED=true and configure MONGODB_URI, SESSION_SECRET, and NEXT_PUBLIC_SITE_URL in the target environment. Set the site URL to the final deployment origin. Run the seed against the target database from a trusted local environment, then deploy with `npm run build`. A preview deployment needs its own correctly configured origin for form and admin mutation checks. This app uses Node/Mongoose and should be hosted on a Node-compatible platform, not a Cloudflare Worker without Mongo support.
 
 No runtime upload operation writes to disk. A local `.env.local` is deliberately not supplied and credentials are not hardcoded. Connection strings and signing secrets stay server-side.
 
