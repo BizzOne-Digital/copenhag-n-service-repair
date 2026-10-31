@@ -237,14 +237,14 @@ const items = [
     "Mobile Tire Press",
     "mobile-tire-press",
     "Press-on tire replacement brought to your site.",
-    "/images/generated/tire-wheel.jpg",
+    "/images/generated/tire-wheel.webp",
     "Our mobile tire press comes to your location to press off worn solid and press-on tires and fit new ones, so your lift trucks can stay on site. Contact us with your equipment make, model and tire size to discuss scheduling and pricing.",
   ],
   [
     "On-Site Tire Service",
     "on-site-tire-service",
     "Tire inspection, repair and replacement at your location.",
-    "/images/generated/onsite-forklift.jpg",
+    "/images/generated/onsite-forklift.webp",
     "Worn or damaged tires affect stability, safety and performance. We inspect, repair and replace lift truck and equipment tires at your location to reduce downtime. Contact us with your equipment details to discuss the work and availability.",
   ],
   [
