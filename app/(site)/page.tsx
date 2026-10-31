@@ -4,6 +4,7 @@ import {
   ServiceProcess,
   BreakdownCallout,
   ServiceAreaOverview,
+  TrustOverview,
   HomeFAQs,
 } from "@/components/home-details";
 import { Credentials } from "@/components/site/Credentials";
@@ -112,6 +113,7 @@ export default async function Home() {
       </section>
       <EquipmentOverview content={c} />
       <AboutSplit content={c} />
+      <TrustOverview content={c} />
       <MaintenanceOverview content={c} />
       <ServiceProcess content={c} />
       <BreakdownCallout content={c} site={site} />

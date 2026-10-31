@@ -13,6 +13,8 @@ import {
   CalendarCheck,
   Plus,
   Mail,
+  BadgeCheck,
+  ShieldCheck,
 } from "lucide-react";
 import { SafeImage } from "@/components/ui/SafeImage";
 type Content = Record<string, string>;
@@ -190,6 +192,26 @@ export function ServiceAreaOverview({
             <ArrowRight size={17} />
           </Link>
         </aside>
+      </div>
+    </section>
+  );
+}
+export function TrustOverview({ content: c }: { content: Content }) {
+  return (
+    <section className="section">
+      <div className="container">
+        <p className="eyebrow">WHY CHOOSE US</p>
+        <h2>{c.trustTitle}</h2>
+        <p className="home-section-copy">{c.trustText}</p>
+        <div className="home-audiences">
+          {[BadgeCheck, CalendarCheck, ShieldCheck].map((Icon, i) => (
+            <article key={i}>
+              <Icon size={25} strokeWidth={1.6} />
+              <h3>{c[`trust${i + 1}Title`]}</h3>
+              <p>{c[`trust${i + 1}Text`]}</p>
+            </article>
+          ))}
+        </div>
       </div>
     </section>
   );

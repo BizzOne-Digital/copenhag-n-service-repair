@@ -19,7 +19,7 @@ export async function POST(req: Request) {
     await rateLimit(req, "login", 8);
     const { email, password } = z
       .object({
-        email: z.string().email().max(254),
+        email: z.string().trim().min(3).max(254),
         password: z.string().min(1).max(200),
       })
       .parse(await req.json());

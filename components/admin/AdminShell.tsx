@@ -6,9 +6,6 @@ import {
   CalendarDays,
   Mail,
   Wrench,
-  FileText,
-  Images,
-  Settings,
   LogOut,
   ArrowUpRight,
 } from "lucide-react";
@@ -18,9 +15,6 @@ const links = [
   ["/admin/bookings", "Bookings", CalendarDays],
   ["/admin/enquiries", "Enquiries", Mail],
   ["/admin/services", "Services", Wrench],
-  ["/admin/pages", "Page content", FileText],
-  ["/admin/media", "Media library", Images],
-  ["/admin/settings", "Site settings", Settings],
 ] as const;
 export function AdminShell({ children }: { children: React.ReactNode }) {
   const path = usePathname();

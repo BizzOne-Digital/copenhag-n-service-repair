@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { CalendarDays, Mail, Wrench, Images, ArrowUpRight } from "lucide-react";
+import { CalendarDays, Mail, Wrench, ArrowUpRight } from "lucide-react";
 import { connectDB } from "@/lib/db";
-import { Booking, Enquiry, Service, StoredUpload } from "@/models";
+import { Booking, Enquiry, Service } from "@/models";
 export default async function Dashboard() {
   await connectDB();
   const [counts, bookings, enquiries] = await Promise.all([
@@ -9,7 +9,6 @@ export default async function Dashboard() {
       Booking.countDocuments(),
       Enquiry.countDocuments(),
       Service.countDocuments(),
-      StoredUpload.countDocuments(),
     ]),
     Booking.find().sort({ createdAt: -1 }).limit(5).lean(),
     Enquiry.find().sort({ createdAt: -1 }).limit(5).lean(),
@@ -20,7 +19,7 @@ export default async function Dashboard() {
         <div>
           <p className="eyebrow">YOUR BUSINESS AT A GLANCE</p>
           <h1>WORKSPACE OVERVIEW.</h1>
-          <p>Keep up with requests and keep your website current.</p>
+          <p>Keep up with bookings, enquiries and services.</p>
         </div>
         <Link href="/" className="small-button" target="_blank">
           View website
@@ -32,7 +31,6 @@ export default async function Dashboard() {
           [CalendarDays, "Bookings", counts[0], "/admin/bookings"],
           [Mail, "Enquiries", counts[1], "/admin/enquiries"],
           [Wrench, "Services", counts[2], "/admin/services"],
-          [Images, "Images", counts[3], "/admin/media"],
         ].map(([Icon, title, count, href]) => {
           const I = Icon as typeof Mail;
           return (
@@ -81,24 +79,6 @@ export default async function Dashboard() {
           </section>
         ))}
       </div>
-      <section className="admin-panel">
-        <h2>Make it yours.</h2>
-        <p>
-          Update images and text, maintain your services, and configure your
-          business contact details.
-        </p>
-        <div className="quick-links">
-          <Link className="small-button" href="/admin/pages">
-            Edit page content
-          </Link>
-          <Link className="small-button" href="/admin/settings">
-            Business settings
-          </Link>
-          <Link className="small-button" href="/admin/media">
-            Upload images
-          </Link>
-        </div>
-      </section>
     </>
   );
 }

@@ -103,6 +103,18 @@ export const defaultPages: Record<string, Record<string, string>> = {
       "Small engine repair enquiries from the general public as well as businesses.",
     areaNote:
       "Share your equipment location when you get in touch. We will discuss your service request and arrangements directly.",
+    trustTitle: "SKILLED PEOPLE. PLANNED CARE. FULL COVERAGE.",
+    trustText:
+      "When your equipment is in our hands, you should know who is working on it, how problems are prevented and that you are protected while the work is done.",
+    trust1Title: "Certified Staff",
+    trust1Text:
+      "Every member of our repair team holds factory training and official ministry certifications, ensuring your equipment is handled by knowledgeable, skilled professionals.",
+    trust2Title: "Proactive Care Plans",
+    trust2Text:
+      "Regular checkups help identify potential problems early, helping you avoid more expensive, unexpected repairs down the road.",
+    trust3Title: "Complete Insurance Coverage",
+    trust3Text:
+      "Full liability protection is included with our services to give you peace of mind while our technicians are working on-site.",
     faqTitle: "PRACTICAL QUESTIONS. STRAIGHT ANSWERS.",
     faqText:
       "A little information makes it easier to discuss the job. Here are a few things to know before you call or request service.",
@@ -220,6 +232,20 @@ const items = [
     "Equipment stopped? Call us to discuss breakdown repair.",
     photos.breakdown,
     "When a breakdown interrupts your operation, call 519-281-6100 to discuss your equipment issue and service availability.",
+  ],
+  [
+    "Mobile Tire Press",
+    "mobile-tire-press",
+    "Press-on tire replacement brought to your site.",
+    photos.breakdown,
+    "Our mobile tire press comes to your location to press off worn solid and press-on tires and fit new ones, so your lift trucks can stay on site. Contact us with your equipment make, model and tire size to discuss scheduling and pricing.",
+  ],
+  [
+    "On-Site Tire Service",
+    "on-site-tire-service",
+    "Tire inspection, repair and replacement at your location.",
+    photos.forklift,
+    "Worn or damaged tires affect stability, safety and performance. We inspect, repair and replace lift truck and equipment tires at your location to reduce downtime. Contact us with your equipment details to discuss the work and availability.",
   ],
   [
     "New & Used Lift Truck Sales",

@@ -45,7 +45,7 @@ export function LoginForm({ configured }: { configured: boolean }) {
       )}
       <label className="field">
         Email
-        <input type="email" name="email" required autoComplete="username" />
+        <input type="text" name="email" required autoComplete="username" />
       </label>
       <label className="field">
         Password
